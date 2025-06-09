@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import menuBurger from "../assets/images/menuBurger.svg";
-import "../styles/TopBar.css";
+import "../styles/topBar.css";
 
 function TopBar() {
   const [menuOpen, setMenuOpen] = useState(false);
