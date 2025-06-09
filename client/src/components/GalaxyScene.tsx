@@ -8,7 +8,7 @@ interface GalaxySceneProps {
 }
 
 export default function GalaxyScene({ scrollProgress }: GalaxySceneProps) {
-  const zoomFactor = 1 + 0.2 * Math.min(scrollProgress * 2, 1); // de 1 à 1.2
+  const zoomFactor = 1 + 0.2 * Math.min(scrollProgress * 2, 1);
 
   return (
     <>

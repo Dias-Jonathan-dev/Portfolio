@@ -13,8 +13,7 @@ function LandingPage() {
   const scrollProgress = useScrollProgress(maxScroll);
   const showEndPage = scrollProgress >= Math.abs(lastPlanetZ) + endPageOffset;
 
-  // Calculs d'opacité, zoom, flou liés à la progression (de 0 à 1)
-  const fadeOut = 1 - scrollProgress * 2; // Descend plus vite que scroll (passe à 0 dès 0.5)
+  const fadeOut = 1 - scrollProgress * 2;
   const hiddenStyle = {
     opacity: Math.max(fadeOut, 0),
     transform: `scale(${1 - scrollProgress * 0.2})`,

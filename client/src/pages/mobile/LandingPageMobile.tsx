@@ -3,18 +3,6 @@ import "../../styles/mobile/landingpagemobile.css";
 export default function LandingPageMobile() {
   return (
     <div className="landing-mobile-bg">
-      <header className="landing-mobile-topbar">
-        <span className="mobile-logo">JD</span>
-        <button
-          className="mobile-burger-menu"
-          type="button"
-          aria-label="Ouvrir le menu"
-        >
-          <span />
-          <span />
-          <span />
-        </button>
-      </header>
       <main className="landing-mobile-content">
         <div className="mobile-glow-lights">
           <div className="mobile-glow1" />
