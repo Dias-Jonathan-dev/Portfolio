@@ -42,7 +42,7 @@ export const planetData: PlanetData[] = [
     texture: venusTexture,
     position: [1, 0.2, -150],
     scale: 0.9,
-    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    link: "https://game-space-rho.vercel.app/",
     description:
       "Bibliothèque de jeux multiplateforme. Projet basé sur l’API RAWG, avec génération dynamique des pages de jeux et filtres par plateforme ou style. Le défi : gérer une large base de données tout en gardant une interface claire.",
     Langages: ["React", "CSS", "TypeScript", "API RAWG"],
