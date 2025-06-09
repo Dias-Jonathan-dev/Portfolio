@@ -33,7 +33,7 @@
   overflow-y: auto;
   box-sizing: border-box;
   padding-right: 2.5rem; /* Espace pour la scrollbar */
-  padding-top: 150px; /* Décale le texte sous la TopBar */
+  padding-top: 10rem; /* Décale le texte sous la TopBar */
 }
 
 .about-text p {
