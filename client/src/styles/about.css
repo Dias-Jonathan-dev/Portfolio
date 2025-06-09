@@ -24,16 +24,16 @@
   font-family: var(--font-krona);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* <-- change ici */
+  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 45ch;
   margin-left: 4vw;
   margin-right: 4vw;
+  min-height: calc(100vh - 60px);
   overflow-y: auto;
   box-sizing: border-box;
-  padding-right: 2.5rem; /* Espace pour la scrollbar */
-  padding-top: 10rem; /* Décale le texte sous la TopBar */
+  padding-right: 2.5rem;
 }
 
 .about-text p {
