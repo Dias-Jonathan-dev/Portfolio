@@ -16,23 +16,6 @@ body {
   padding-bottom: 2rem;
 }
 
-.mobile-projects-topbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-  padding: 1.5rem 1rem 1rem 1rem;
-  background: rgba(20, 20, 40, 0.85);
-  border-bottom: 1px solid #23234c;
-}
-
-.mobile-logo {
-  font-weight: bold;
-  font-size: 1.7rem;
-  color: #ffb347;
-  letter-spacing: 2px;
-}
-
 .mobile-projects-topbar h2 {
   font-size: 1.2rem;
   margin: 0;

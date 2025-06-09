@@ -6,10 +6,6 @@ import "../../styles/mobile/projectsmobile.css";
 export default function ProjectsMobile() {
   return (
     <div className="mobile-projects-bg">
-      <header className="mobile-projects-topbar">
-        <span className="mobile-logo">JD</span>
-        <h2>Mes planètes / projets</h2>
-      </header>
       <main className="mobile-projects-content">
         <div className="mobile-projects-grid">
           {planetData.map((planet, idx) => (
