@@ -1,29 +1,32 @@
 // Import necessary modules from React and React Router
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 /* ************************************************************************* */
 
 // Import the main app component
 import App from "./App";
-
-// Import additional components for new routes
-// Try creating these components in the "pages" folder
-
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
-
-/* ************************************************************************* */
+import LandingPageSelector from "./components/LandingPageSelector";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Legal from "./pages/Legal";
+import Projects from "./pages/mobile/ProjectsMobile";
 
 // Create router configuration with routes
 // You can add more routes as you build out your app!
 const router = createBrowserRouter([
   {
-    path: "/", // The root path
-    element: <App />, // Renders the App component for the home page
+    path: "/",
+    element: <App />,
+    children: [
+      { index: true, element: <LandingPageSelector /> },
+      { path: "projets", element: <Projects /> },
+      { path: "a-propos", element: <About /> },
+      { path: "me-contacter", element: <Contact /> },
+      { path: "mentions-legales", element: <Legal /> },
+    ],
   },
-  // Try adding a new route! For example, "/about" with an About component
 ]);
 
 /* ************************************************************************* */

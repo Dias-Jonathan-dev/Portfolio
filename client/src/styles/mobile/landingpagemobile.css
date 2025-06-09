@@ -1,0 +1,301 @@
+/* Fond galaxie fixe ou animé */
+.landing-mobile-bg {
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(ellipse at 60% 40%, #23234f 60%, #0a0a1a 100%);
+  background-image: url("../../assets/images/galaxie-hd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-mobile-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.9) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Topbar mobile */
+.landing-mobile-topbar {
+  height: 56px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(10, 10, 26, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.mobile-logo {
+  font-family: var(--font-krona, sans-serif);
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.mobile-burger-menu {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.mobile-burger-menu span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* Contenu centré */
+.landing-mobile-content {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding-top: 56px; /* hauteur de ta topbar */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mobile-landing-page-text {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+}
+
+.landing-mobile-content h1 {
+  color: #fff;
+  font-family: var(--font-krona, sans-serif);
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #000a;
+}
+
+.landing-mobile-content h2 {
+  color: #d5a300;
+  font-family: var(--font-krona, sans-serif);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px #000a;
+}
+
+/* Glows */
+.mobile-glow-lights {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.mobile-glow1,
+.mobile-glow2,
+.mobile-glow3 {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(168, 191, 229, 0.4) 0%,
+    transparent 60%
+  );
+  filter: blur(10px);
+  animation: mobile-float 8s ease-in-out infinite;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+.mobile-glow1 {
+  top: 38%;
+  left: 4%;
+  animation-delay: 0s;
+}
+.mobile-glow2 {
+  bottom: 25%;
+  left: 28%;
+  animation-delay: 2s;
+}
+.mobile-glow3 {
+  top: 38%;
+  left: 58%;
+  animation-delay: 4s;
+}
+
+/* Particules */
+.mobile-particles-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.mobile-particles-behind {
+  z-index: 1;
+}
+.mobile-particles-front {
+  z-index: 4;
+}
+
+.mobile-particle1,
+.mobile-particle2,
+.mobile-particle3,
+.mobile-particle4,
+.mobile-particle5 {
+  position: absolute;
+  background-color: rgb(26, 218, 221);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  filter: blur(4px);
+  z-index: 2;
+  animation: mobile-particleFloat 8s ease-in-out infinite;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+.mobile-particle1,
+.mobile-particle2,
+.mobile-particle3 {
+  width: 4px;
+  height: 4px;
+}
+.mobile-particle4,
+.mobile-particle5 {
+  width: 7px;
+  height: 7px;
+}
+
+.mobile-particle1 {
+  top: 52%;
+  left: 22%;
+  animation-delay: 0s;
+}
+.mobile-particle2 {
+  top: 58%;
+  left: 48%;
+  animation-delay: 2s;
+}
+.mobile-particle3 {
+  top: 44%;
+  left: 68%;
+  animation-delay: 4s;
+}
+.mobile-particle4 {
+  top: 60%;
+  left: 75%;
+  animation-delay: 6s;
+}
+.mobile-particle5 {
+  top: 54%;
+  left: 32%;
+  animation-delay: 8s;
+}
+
+/* Étoiles scintillantes */
+.mobile-stars-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: transparent;
+}
+
+.mobile-stars-bg::before,
+.mobile-stars-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(white 1px, transparent 1.5px),
+    radial-gradient(#fff7 1px, transparent 1.5px);
+  background-size: 80px 80px, 120px 120px;
+  background-position: 0 0, 40px 40px;
+  opacity: 0.25;
+  animation: mobile-stars-move 12s linear infinite alternate;
+}
+
+/* Footer */
+.landing-mobile-footer {
+  width: 100vw;
+  padding: 1.2rem 0 1.8rem 0;
+  text-align: center;
+  background: linear-gradient(0deg, #0a0a1a 90%, transparent 100%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.landing-mobile-footer p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: var(--font-krona, sans-serif);
+  opacity: 0.85;
+  letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes mobile-float {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-40px) translateX(40px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+@keyframes mobile-particleFloat {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  30% {
+    transform: translateY(-30px) translateX(20px);
+  }
+  60% {
+    transform: translateY(-18px) translateX(-8px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+@keyframes mobile-stars-move {
+  0% {
+    background-position: 0 0, 40px 40px;
+  }
+  100% {
+    background-position: 20px 40px, 60px 80px;
+  }
+}

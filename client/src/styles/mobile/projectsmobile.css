@@ -1,0 +1,130 @@
+html,
+body {
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.mobile-projects-bg {
+  width: 100vw;
+  position: relative;
+  background: url("../../assets/images/galaxie-hd.jpg") center / cover no-repeat;
+  background-color: rgba(15, 21, 30, 0.8);
+  background-blend-mode: multiply;
+  color: #fff;
+  font-family: "Montserrat", Arial, sans-serif;
+  padding-bottom: 2rem;
+}
+
+.mobile-projects-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+  background: rgba(20, 20, 40, 0.85);
+  border-bottom: 1px solid #23234c;
+}
+
+.mobile-logo {
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #ffb347;
+  letter-spacing: 2px;
+}
+
+.mobile-projects-topbar h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #fff;
+}
+
+.mobile-projects-content {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem 1rem 0 1rem;
+}
+
+.mobile-projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.mobile-project-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem; /* réduit l'espace entre planète et card */
+}
+
+.mobile-planet-3d-wrap {
+  width: 70vw;
+  height: 70vw;
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-planet-info-card {
+  width: 70vw;
+  max-width: 400px;
+  margin: 0 auto;
+  background: rgba(30, 30, 60, 0.8);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  padding: 1.7rem 1.2rem 1.4rem 1.2rem;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.1rem;
+  line-height: 1.5;
+}
+
+.mobile-planet-info-card h3 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.15rem;
+  color: #ffb347;
+}
+
+.mobile-planet-info-card p {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.mobile-planet-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.1rem;
+}
+
+.mobile-tech-badge {
+  background: #23234c;
+  color: #ffb347;
+  border-radius: 0.7rem;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.mobile-planet-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #fff;
+  background: #ffb347;
+  padding: 0.45rem 1.3rem;
+  border-radius: 0.7rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: background 0.2s;
+  align-self: center;
+}

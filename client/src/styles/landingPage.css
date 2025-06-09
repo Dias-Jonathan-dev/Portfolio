@@ -1,0 +1,200 @@
+.landing-page {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 60px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.landing-page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  will-change: opacity, transform, filter;
+}
+
+.landing-page-text {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+}
+
+.glow-lights {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.glow1,
+.glow2,
+.glow3 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(168, 191, 229, 0.4) 0%,
+    transparent 60%
+  );
+  filter: blur(20px);
+  animation: float 8s ease-in-out infinite;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+.glow1 {
+  top: 20%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.glow2 {
+  bottom: 15%;
+  left: 35%;
+  animation-delay: 2s;
+}
+
+.glow3 {
+  top: 30%;
+  left: 60%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-80px) translateX(80px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+.particles-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.particles-behind {
+  z-index: 1;
+}
+
+.particles-front {
+  z-index: 4;
+}
+
+.particle1,
+.particle2,
+.particle3,
+.particle4,
+.particle5 {
+  position: absolute;
+  background-color: rgb(26, 218, 221);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  filter: blur(4px);
+  z-index: 2;
+  animation: particleFloat 8s ease-in-out infinite;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+.particle1,
+.particle2,
+.particle3 {
+  width: 9px;
+  height: 9px;
+}
+
+.particle4,
+.particle5 {
+  width: 15px;
+  height: 15px;
+}
+
+.particle1 {
+  top: 50%;
+  left: 25%;
+  animation-delay: 0s;
+}
+
+.particle2 {
+  top: 55%;
+  left: 45%;
+  animation-delay: 2s;
+}
+
+.particle3 {
+  top: 45%;
+  left: 65%;
+  animation-delay: 4s;
+}
+
+.particle4 {
+  top: 55%;
+  left: 72%;
+  animation-delay: 6s;
+}
+
+.particle5 {
+  top: 50%;
+  left: 35%;
+  animation-delay: 8s;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  30% {
+    transform: translateY(-50px) translateX(30px);
+  }
+  60% {
+    transform: translateY(-30px) translateX(-10px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.9) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.galaxy-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: auto !important;
+}
+
+.landing-page-content,
+.landing-page-text,
+.gradient-overlay,
+.particles-container {
+  pointer-events: none !important;
+}
