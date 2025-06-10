@@ -12,6 +12,15 @@
   justify-content: space-between;
   align-items: center;
   color: white;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #d5a300 22%,
+    #6f5500 49%,
+    #d5a300 75%,
+    #6f5500 100%
+  );
+  border-image-slice: 1;
 }
 
 .topbar-title {

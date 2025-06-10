@@ -7,10 +7,12 @@ body {
 
 .mobile-projects-bg {
   width: 100vw;
+  min-height: 100vh;
   position: relative;
   background: url("../../assets/images/galaxie-hd.jpg") center / cover no-repeat;
   background-color: rgba(15, 21, 30, 0.8);
   background-blend-mode: multiply;
+  background-attachment: fixed;
   color: #fff;
   font-family: "Montserrat", Arial, sans-serif;
   padding-bottom: 2rem;
@@ -57,11 +59,12 @@ body {
   width: 70vw;
   max-width: 400px;
   margin: 0 auto;
-  background: rgba(30, 30, 60, 0.8);
+  background: rgba(30, 30, 60, 0.4); /* 80% d'opacité */
   border-radius: 1.2rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
   padding: 1.7rem 1.2rem 1.4rem 1.2rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); /* Effet de blur */
+  -webkit-backdrop-filter: blur(10px); /* Pour Safari */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
