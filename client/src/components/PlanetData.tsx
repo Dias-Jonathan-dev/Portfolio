@@ -22,7 +22,7 @@ export const planetData: PlanetData[] = [
     scale: 0.7,
     link: "https://ikay-gh.github.io/Projet-1/",
     description:
-      "Site qui répértorie les meilleures adresses culinaires proche de notre campus, et offre la possibilité de trier par type de cuisine",
+      "Site qui répertorie les meilleures adresses culinaires proches de notre campus et offre la possibilité de trier par type de cuisine.",
     Langages: ["HTML", "CSS", "Javascript"],
   },
   {

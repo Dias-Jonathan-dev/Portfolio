@@ -37,10 +37,10 @@ function Contact() {
             <input type="email" name="mail" required />
           </label>
           <label>
-            Votre transmition
+            Votre transmission
             <textarea name="message" rows={5} required />
           </label>
-          <button type="submit">Envoyer la transmition</button>
+          <button type="submit">Envoyer la transmission</button>
           {sent && <p className="confirmation-message">Message envoyé !</p>}
         </form>
         <div className="media">
