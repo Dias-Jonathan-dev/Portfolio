@@ -4,7 +4,7 @@
   "scripts": {
     "check-types": "tsc --noEmit",
     "dev": "vite --host",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npm i --legacy-peer-deps",
     "preview": "vite preview"
   },
   "dependencies": {
