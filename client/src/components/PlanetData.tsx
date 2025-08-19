@@ -1,4 +1,5 @@
 import marsTexture from "../assets/images/textures/mars.jpg";
+import saturnTexture from "../assets/images/textures/saturn.jpg";
 import sunTexture from "../assets/images/textures/sun.jpg";
 import venusTexture from "../assets/images/textures/venus.jpg";
 
@@ -46,5 +47,25 @@ export const planetData: PlanetData[] = [
     description:
       "Bibliothèque de jeux multiplateforme. Projet basé sur l’API RAWG, avec génération dynamique des pages de jeux et filtres par plateforme ou style. Le défi : gérer une large base de données tout en gardant une interface claire.",
     Langages: ["React", "CSS", "TypeScript", "API RAWG"],
+  },
+  {
+    id: "saturn",
+    name: "Wander",
+    texture: saturnTexture,
+    position: [-1.2, -0.2, -200],
+    scale: 0.9,
+    link: "https://wander-client-two.vercel.app/",
+    description:
+      "Application web permettant aux utilisateurs de trouver des idées de destinations à visiter, selon des critères de sélection variés et cumulatifs.",
+    Langages: [
+      "React",
+      "CSS",
+      "TypeScript",
+      "API REST",
+      "MySQL",
+      "Express",
+      "Node",
+      "Sequelize",
+    ],
   },
 ];
